@@ -1,0 +1,12 @@
+img{
+    transition: 1.5s;
+}
+input:checked ~ img{
+    visibility: hidden;
+    opacity: 0;
+}
+p{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
