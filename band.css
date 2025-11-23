@@ -1,18 +1,26 @@
-img{
-    transition: 1.5s;
+p {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-input:checked ~ img{
-    visibility: hidden;
-    opacity: 0;
+h2 {
+  color: brown;
 }
-p{
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h1 {
+  color: aqua;
 }
-h2{
-    color: brown;
+
+input:checked ~ #line_1 {
+  opacity: 100;
 }
-h1{
-    color: aqua;
+input:checked ~ #line_2 {
+  opacity: 0;
+}
+
+img {
+  transition: 2s;
+}
+#line_2 ~ img {
+  opacity: 0;
 }
